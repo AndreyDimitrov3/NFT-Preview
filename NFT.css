@@ -1,0 +1,110 @@
+*{
+    font-family: "Outfit";
+}
+
+body{
+    background-color: #0D1A2D;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 320px;
+    border-radius: 12px;
+    background-color: #15273F;
+    box-shadow: black 0px 7px 29px 0px;
+}
+
+h1{
+    font-size: 23px;
+    color: white;
+    cursor: pointer;
+}
+
+h1:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.img-crypto{
+    border-radius: 6px;
+}
+
+.img-crypto:hover{
+    outline: 100vmax solid hsl(178, 100%, 50%, 0.45);
+    outline-offset: -100vmax;
+    border-radius: 10px 10px 0 0;
+    -webkit-mask:linear-gradient(#000 0 0); 
+}
+
+.p{
+    margin: 0;
+    font-size: 18px;
+    color: #8AA1C0;
+}
+
+.eth{
+    color: hsl(178, 100%, 50%);
+}
+
+.holder{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.crypto-holder{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.time-holder{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.hr{
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.name{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.avatar{
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 34px;
+    width: 34px;
+}
+
+span{
+    color: white;
+    cursor: pointer;
+}
+
+span:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+@media (max-width: 385px){
+    .main{
+        max-width: unset;
+        width: 78%;
+    }
+}
